@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   padding: 0;
   margin: 0;
@@ -54,10 +55,37 @@ body {
   border-radius: 25px;
 }
 
-h1 {
+.title {
   padding-top: 130px;
   display: flex;
   justify-content: center;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+}
+
+.grid-gallery {
+  padding-top: 30px;
+  display: grid; /* crée le layout en 2D */
+  gap: 40px;
+  grid-template-columns: 1fr 1fr 1fr 1fr; /* 4 colonne de 1 fraction de notre ecran */
+  grid-template-rows: 30vh 30vh 30vh 30vh;
+  padding-inline: 20vh;
+}
+.grid-gallery div {
+  background-color: antiquewhite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.grid-gallery div img {
+  width: 100%;
+  transition: transform 0.5s;
+}
+.grid-gallery div img:hover {
+  transform: scale(1.2);
 }
 
 /*# sourceMappingURL=build.css.map */
