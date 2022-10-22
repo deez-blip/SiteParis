@@ -12,8 +12,12 @@
 
     & > div {
         width: 40%;
-        margin: 40px;
+        margin: 30px;
         border-radius: 25px;
+
+        @media screen and (max-width: 900px) {
+            margin: 15px;
+        }
 
         & > p {
             text-align: center;

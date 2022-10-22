@@ -14,8 +14,8 @@ body {
         position: fixed;
         z-index: 4;
         background-color: rgb(68, 66, 66);
-        bottom: 50px;
-        right: 50px;
+        bottom: 15px;
+        right: 15px;
         width: 50px;
         height: 50px;
         box-shadow: 0 6px 12px rgb(0 0 0 / 20%);
@@ -37,7 +37,7 @@ body {
     }
 
     .menu {
-        background-color: rgb(137, 136, 136);
+        background-color: grey;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -87,28 +87,67 @@ body {
     .grid-gallery {
         padding-top: 30px;
         display: grid; /* crée le layout en 2D */
-        gap: 40px;
+        gap: 30px;
         grid-template-columns: 1fr 1fr 1fr 1fr; /* 4 colonne de 1 fraction de notre ecran */
         grid-template-rows: 30vh 30vh 30vh 30vh;
-        padding-inline: 20vh;
+        padding-inline: 10vh;
+
+        @media screen and (max-width: 900px) {
+            padding-inline: 5vh;
+        }
 
         .big {
             grid-column: 2 / 4;
             grid-row: 2 / 4;
             display: flex;
             justify-content: center;
+            align-items: center;
+
+            img {
+                height: 80%;
+                width: 90%;
+                
+                transition: transform 0.5s;
+                border-radius: 16px;
+
+                &:hover {
+                    transform: scale(1.2);
+                }
+            }
         }
 
         .large-1 {
             grid-column: 1 / 3;
             display: flex;
             justify-content: center;
+
+            img {
+                width: 90%;
+                
+                transition: transform 0.5s;
+                border-radius: 16px;
+
+                &:hover {
+                    transform: scale(1.2);
+                }
+            }
         }
 
         .large-2 {
             grid-column: 3 / 5;
             display: flex;
             justify-content: center;
+
+            img {
+                width: 90%;
+                
+                transition: transform 0.5s;
+                border-radius: 16px;
+
+                &:hover {
+                    transform: scale(1.2);
+                }
+            }
         }
 
         .large-3 {
@@ -116,6 +155,17 @@ body {
             grid-row: 4 / 5;
             display: flex;
             justify-content: center;
+
+            img {
+                width: 90%;
+                
+                transition: transform 0.5s;
+                border-radius: 16px;
+
+                &:hover {
+                    transform: scale(1.2);
+                }
+            }
         }
 
         .large-4 {
@@ -123,14 +173,25 @@ body {
             grid-row: 4 / 5;
             display: flex;
             justify-content: center;
+
+            img {
+                width: 90%;
+                
+                transition: transform 0.5s;
+                border-radius: 16px;
+
+                &:hover {
+                    transform: scale(1.2);
+                }
+            }
         }
 
-        div {
+        .normal {
             display: flex;
             justify-content: center;
             img {
                 width: 95%;
-                object-fit: none;
+                
                 transition: transform 0.5s;
                 border-radius: 16px;
 
