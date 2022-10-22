@@ -1,0 +1,19 @@
+@mixin quai {
+    padding-top: 50px;
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+
+    & > div {
+        width: 40%;
+        margin: 40px;
+        background-color: darksalmon;
+        border-radius: 25px;
+
+        & > img {
+            width: 100%;
+            border-radius: 25px;
+        }
+    }
+}
