@@ -5,15 +5,24 @@
     align-items: center;
     justify-content: center;
 
+    .texte {
+        background-color: rgb(255, 255, 255);
+        box-shadow: 10px 10px 10px grey;
+    }
+
     & > div {
         width: 40%;
         margin: 40px;
-        background-color: darksalmon;
         border-radius: 25px;
+
+        & > p {
+            text-align: center;
+        }
 
         & > img {
             width: 100%;
             border-radius: 25px;
+            box-shadow: 10px 5px 5px grey;
         }
     }
 }
