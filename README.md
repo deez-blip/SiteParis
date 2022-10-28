@@ -19,7 +19,7 @@
 
 1. First of all, I linked my github to vercel
 2. Then, I add checkly to my project to make sure he is being updated all the time
-3. Finally, I added imgbot to my project in order to optimize it and mergify which, in case the project ended by being made by mane people, would help us a lot to merge our different files.
+3. Finally, I added imgbot to my project in order to optimize it, mergify which, in case the project ended by being made by many people, would help us a lot to merge our different files and CodeFactor which help me increase the quality of my code.
 
 # Optionals additions to my repository, with zappier
 
